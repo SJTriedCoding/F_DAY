@@ -84,31 +84,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* ---------- unlock form (final surprise) ---------- */
-  const unlockForm = document.getElementById('unlockForm');
-  const unlockInput = document.getElementById('unlockInput');
-
-  unlockForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = unlockInput.value.trim();
-
-    if (name.length === 0) {
-      unlockInput.classList.remove('shake');
-      // restart animation
-      void unlockInput.offsetWidth;
-      unlockInput.classList.add('shake');
-      unlockInput.placeholder = 'Type your name first :)';
-      return;
-    }
-
-    showScreen('final-screen');
-  });
-
-  /* ---------- flip cards ---------- */
-  document.querySelectorAll('[data-flip]').forEach(card => {
-    card.addEventListener('click', () => {
-      card.classList.toggle('flipped');
-    });
-  });
-
 });

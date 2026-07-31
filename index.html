@@ -8,7 +8,6 @@
 <meta name="theme-color" content="#ffb6c1">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💗</text></svg>">
 
-<!-- Link preview when this URL is shared (texts, WhatsApp, Instagram DM, etc.) -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="I made you something 💌">
 <meta property="og:description" content="Tap to open your gift.">
@@ -25,12 +24,10 @@
 </head>
 <body>
 
-<!-- Floating hearts background, present on every screen -->
 <div class="hearts-bg" id="heartsBg" aria-hidden="true"></div>
 
 <div class="app">
 
-  <!-- ============ 1. LANDING SCREEN ============ -->
   <section id="landing-screen" class="screen active">
     <button class="song-btn" id="songBtn" type="button">
       <span class="song-icon">♪</span> <span class="song-label">Play our song</span>
@@ -47,7 +44,6 @@
     </div>
   </section>
 
-  <!-- ============ 2. MAIN MENU ============ -->
   <section id="menu-screen" class="screen">
     <div class="menu-content">
       <h1 class="page-title">Made just for you</h1>
@@ -66,25 +62,20 @@
           <span class="menu-card-icon">💐</span>
           <span class="menu-card-label">Flowers</span>
         </button>
-        <button class="menu-card" data-target="lock-screen" type="button">
-          <span class="menu-card-icon">🎀</span>
-          <span class="menu-card-label">Final Surprise</span>
-        </button>
       </div>
     </div>
   </section>
 
-  <!-- ============ 3. FLOWERS ============ -->
   <section id="flowers-screen" class="screen">
     <div class="page-content">
       <h1 class="page-title">A Bouquet Just for You</h1>
 
       <div class="bouquet-wrap">
-        <img class="bouquet-img" src="https://placehold.co/380x380/ffb6c1/ffffff?font=quicksand&text=Your+Bouquet" alt="A bouquet of flowers, placeholder — swap for your own photo!">
+        <img class="bouquet-img" src="/tulip bouqet.png" alt="A bouquet of flowers, placeholder — swap for your own photo!">
 
         <div class="sticky-note note-1">You make my world brighter</div>
-        <div class="sticky-note note-2">I'm so proud of you</div>
-        <div class="sticky-note note-3">Loving you is the easiest thing I've ever done</div>
+        <div class="sticky-note note-2">Watching you smile is my favorite thing in the world</div>
+        <div class="sticky-note note-3">Loving you is the best thing I've ever done</div>
         <div class="sticky-note note-4">With you, everything feels right</div>
       </div>
 
@@ -92,7 +83,6 @@
     </div>
   </section>
 
-  <!-- ============ 4. CAPTURED MEMORIES ============ -->
   <section id="memories-screen" class="screen">
     <div class="page-content">
       <h1 class="page-title">Captured memories</h1>
@@ -110,8 +100,6 @@
           <figure class="polaroid p3"><img src="https://placehold.co/280x280/fff0f5/c2185b?font=quicksand&text=Memory+3" alt="Memory placeholder 3"><figcaption>my favorite</figcaption></figure>
           <figure class="polaroid p4"><img src="https://placehold.co/280x280/ffe4ec/c2185b?font=quicksand&text=Memory+4" alt="Memory placeholder 4"><figcaption>silly us</figcaption></figure>
           <figure class="polaroid p5"><img src="https://placehold.co/280x280/fff0f5/c2185b?font=quicksand&text=Memory+5" alt="Memory placeholder 5"><figcaption>&lt;3</figcaption></figure>
-          <figure class="polaroid p6"><img src="https://placehold.co/280x280/ffe4ec/c2185b?font=quicksand&text=Memory+6" alt="Memory placeholder 6"><figcaption>keepsake</figcaption></figure>
-          <figure class="polaroid p7"><img src="https://placehold.co/280x280/fff0f5/c2185b?font=quicksand&text=Memory+7" alt="Memory placeholder 7"><figcaption>road trip</figcaption></figure>
           <figure class="polaroid p8"><img src="https://placehold.co/280x280/ffe4ec/c2185b?font=quicksand&text=Memory+8" alt="Memory placeholder 8"><figcaption>lately</figcaption></figure>
         </div>
       </div>
@@ -120,7 +108,6 @@
     </div>
   </section>
 
-  <!-- ============ 5. LOVE LETTER ============ -->
   <section id="letter-screen" class="screen">
     <div class="page-content">
       <div class="letter-card">
@@ -135,73 +122,6 @@
         <p class="letter-para">Thank you for being patient with me, for choosing me on the easy days and the hard ones, and for making a home out of whatever room we happen to be in.</p>
         <p class="letter-para">This is just a small gift, but it comes with everything I have.</p>
         <p class="letter-signoff">With all my love,<br>— Me</p>
-      </div>
-
-      <button class="home-btn" data-target="menu-screen" type="button">🏠 Home</button>
-    </div>
-  </section>
-
-  <!-- ============ 6a. FINAL SURPRISE — LOCK SCREEN ============ -->
-  <section id="lock-screen" class="screen">
-    <div class="page-content lock-content">
-      <img class="kitty-img" src="https://placehold.co/200x200/ffd1dc/c2185b?font=quicksand&text=Hello+Kitty" alt="Hello Kitty graphic, placeholder">
-      <h1 class="page-title">One last surprise...</h1>
-      <p class="page-subtitle">Type your name to unlock the final surprise</p>
-
-      <form class="unlock-form" id="unlockForm">
-        <input class="unlock-input" id="unlockInput" type="text" placeholder="Your name" autocomplete="off">
-        <button class="btn btn-yes unlock-btn" type="submit">Unlock 🔓</button>
-      </form>
-
-      <button class="home-btn" data-target="menu-screen" type="button">🏠 Home</button>
-    </div>
-  </section>
-
-  <!-- ============ 6b. FINAL SURPRISE — REVEAL ============ -->
-  <section id="final-screen" class="screen">
-    <div class="page-content">
-      <h1 class="page-title">Our Future Plans</h1>
-      <p class="page-subtitle">Tap each card to peek</p>
-
-      <div class="flip-grid">
-        <button class="flip-card" data-flip type="button" aria-label="Reveal first card">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <span class="flip-heart">🤍</span>
-              <span class="flip-hint">One day...</span>
-            </div>
-            <div class="flip-back">
-              <span class="flip-back-title">The First Hug</span>
-              <span class="flip-back-text">No more screens. Just you and me.</span>
-            </div>
-          </div>
-        </button>
-
-        <button class="flip-card" data-flip type="button" aria-label="Reveal second card">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <span class="flip-heart">🤍</span>
-              <span class="flip-hint">You'll see...</span>
-            </div>
-            <div class="flip-back">
-              <span class="flip-back-title">Our Little Home</span>
-              <span class="flip-back-text">Simple mornings, late-night talks.</span>
-            </div>
-          </div>
-        </button>
-
-        <button class="flip-card" data-flip type="button" aria-label="Reveal third card">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <span class="flip-heart">🤍</span>
-              <span class="flip-hint">Trust me...</span>
-            </div>
-            <div class="flip-back">
-              <span class="flip-back-title">Side by Side</span>
-              <span class="flip-back-text">New places. Same love.</span>
-            </div>
-          </div>
-        </button>
       </div>
 
       <button class="home-btn" data-target="menu-screen" type="button">🏠 Home</button>
